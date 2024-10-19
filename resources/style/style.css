@@ -1,0 +1,324 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  background-color: #1EA896;
+  color: #FFFFFF;
+}
+
+header h3 {
+  display: inline-block;
+}
+
+header #portfolio {
+  margin: auto 2rem;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header #name {
+  margin: auto 0rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+nav {
+  display: inline-block;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+nav ul li {
+  border: 0.1rem solid #FFFFFF;
+  padding: 0.75rem 0.75rem;
+  border-radius: 100%;
+}
+
+nav ul li:hover {
+  background-color: #E8715C;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #FF715B;
+  color: #523F38;
+  border-radius: 3.125rem;
+}
+
+#about-me-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#about-me-content img {
+  width: 40%;
+  max-height: 60rem;
+  border-radius: 3.125rem;
+}
+
+#about-me-text {
+  display: flex;
+  background-color: #523F38;
+  padding: 1rem 2rem;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3.125rem;
+}
+
+#about-me-text p {
+  text-align: start;
+  color: #FFFFFF;
+  margin: 1rem auto;
+  text-align: start;
+  padding: 0.5rem;
+}
+
+#welcome-p {
+  font-size: 1.75rem;
+}
+
+#cs-p {
+  font-size: 1.5rem;
+}
+
+#plans-p {
+  font-size: 1.5rem;
+}
+
+#education {
+  display: flex;
+  flex-direction: row;
+}
+
+#education h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #FF715B;
+  color: #523F38;
+  border-radius: 3.125rem;
+}
+
+#all-education-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#education-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #523F38;
+  color: #FFFFFF;
+  padding: 2rem 2rem;
+  width: 40%;
+  border-radius: 3.125rem;
+}
+
+#education-content li {
+  list-style-type: disc;
+  line-height: 1.5rem;
+}
+
+#schools, #online-courses {
+  width: 80%;
+  text-align: start;
+  margin: 1rem auto;
+}
+
+#schools h2, #online-courses h2 {
+  margin: 0.5rem auto;
+  text-align: start;
+}
+
+#skills-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 4rem auto;
+  padding: 2rem 2rem;
+  background-color: #1EA896;
+}
+
+#skills-content figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills-content img {
+  width: 80%;
+}
+
+#skills-content figcaption {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #FF715B;
+  color: #523F38;
+  border-radius: 3.125rem;
+}
+
+#projects-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sublist {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 23%;
+  height: 10rem;
+  border: 0.2rem solid #1EA896;
+  border-radius: 1.2rem;
+}
+
+.sublist h2 {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  background-color: #1EA896;
+  color:#FFFFFF;
+  width: 100%;
+  border-radius: 1rem; 
+}
+
+.sublist ul {
+  list-style-type:disc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 90%;
+  padding: 1rem 2rem;
+}
+
+.sublist li a {
+  color:#523F38;
+  text-decoration: none;   
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 4rem auto;
+  
+}
+
+#contact-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 23%;
+  height: 10rem;
+  border: 0.2rem solid #523F38 ;
+  border-radius: 1.2rem;
+}
+
+#contact h2 {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  background-color: #523F38;
+  color:#FFFFFF;
+  width: 100%;
+  border-radius: 1rem; 
+}
+
+#contact ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 90%;
+  padding: 1rem 2rem;
+}
+
+#contact li a {
+  color: #1EA896;
+  text-decoration: none;   
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1EA896;
+  color: #FFFFFF;
+  height: 6rem;
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
