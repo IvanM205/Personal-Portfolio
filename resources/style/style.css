@@ -49,6 +49,7 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   margin: auto 2rem;
+  flex-shrink: 2;
 }
 
 nav ul {
@@ -96,8 +97,8 @@ nav ul li a {
 }
 
 #about-me-content img {
-  width: 40%;
-  max-height: 60rem;
+  max-width: 40%;
+  height: auto;
   border-radius: 3.125rem;
 }
 
@@ -105,7 +106,7 @@ nav ul li a {
   display: flex;
   background-color: #523F38;
   padding: 1rem 2rem;
-  width: 40%;
+  max-width: 40%;
   flex-direction: column;
   justify-content: center;
   border-radius: 3.125rem;
@@ -162,7 +163,7 @@ nav ul li a {
   background-color: #523F38;
   color: #FFFFFF;
   padding: 2rem 2rem;
-  width: 40%;
+  max-width: 40%;
   border-radius: 3.125rem;
 }
 
@@ -172,7 +173,7 @@ nav ul li a {
 }
 
 #schools, #online-courses {
-  width: 80%;
+  max-width: 80%;
   text-align: start;
   margin: 1rem auto;
 }
