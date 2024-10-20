@@ -58,10 +58,38 @@ nav ul {
   list-style-type: none;
 }
 
+@media only screen and (max-width: 980px) {
+
+  header #portfolio {
+    margin: auto 2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  header #name {
+    margin: auto 2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    text-align: right;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+
 nav ul li {
   border: 0.1rem solid #FFFFFF;
   padding: 0.75rem 0.75rem;
   border-radius: 100%;
+  flex-shrink: 3;
 }
 
 nav ul li:hover {
@@ -79,7 +107,7 @@ nav ul li a {
   flex-direction: column;
 }
 
-#about-me h1 {
+h1 {
   align-self: center;
   justify-self: center;
   font-size: 3rem;
@@ -88,7 +116,15 @@ nav ul li a {
   padding: 2rem;
   background-color: #FF715B;
   color: #523F38;
-  border-radius: 3.125rem;
+  border-radius: 1.562rem;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 2rem auto;
+  }
 }
 
 #about-me-content {
@@ -96,8 +132,13 @@ nav ul li a {
   justify-content: space-evenly;
 }
 
-#about-me-content img {
+#photo {
   max-width: 40%;
+  height: auto;
+}
+
+#photo img {
+  max-width: 100%;
   height: auto;
   border-radius: 3.125rem;
 }
@@ -132,21 +173,55 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 900px) {
+  #about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #about-me-text {
+    margin-bottom: 4rem;
+    max-width: 70%;
+  }
+
+  #photo {
+    max-width: 70%;
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #welcome-p {
+    font-size: 1.25rem;
+  }
+  
+  #cs-p, #plans-p {
+    font-size: 1rem;
+  }
+
+  #about-me-text {
+    margin-bottom: 2rem;
+  }
+
+  #about-me-text p {
+    margin: 0.5rem auto;
+    text-align: start;
+    padding: 0.25rem;
+  }
+
+  #photo{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
 #education {
   display: flex;
   flex-direction: row;
-}
-
-#education h1 {
-  align-self: center;
-  justify-self: center;
-  font-size: 3rem;
-  text-align: center;
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: #FF715B;
-  color: #523F38;
-  border-radius: 3.125rem;
 }
 
 #all-education-content {
@@ -183,6 +258,29 @@ nav ul li a {
   text-align: start;
 }
 
+@media only screen and (max-width: 900px) {
+  #education-content {
+    margin-bottom: 4rem;
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #education-content {
+    padding: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  #schools h2, #online-courses h2 {
+    font-size: 1.25rem;
+  }
+
+  #schools, #online-courses {
+    margin: 0.5rem auto;
+  }
+
+}
+
 #skills-content {
   display: flex;
   flex-direction: row;
@@ -210,21 +308,21 @@ nav ul li a {
   margin-top: 0.25rem;
 }
 
+@media only screen and (max-width: 480px) {
+  #skills-content {
+    margin: 2rem auto 0rem auto;
+    padding: 2rem 1rem;
+  }
+
+  #skills-content figcaption {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+}
+
 #projects {
   display: flex;
   flex-direction: column;
-}
-
-#projects h1 {
-  align-self: center;
-  justify-self: center;
-  font-size: 3rem;
-  text-align: center;
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: #FF715B;
-  color: #523F38;
-  border-radius: 3.125rem;
 }
 
 #projects-content {
@@ -268,27 +366,43 @@ nav ul li a {
   text-decoration: none;   
 }
 
+.sublist li a:hover {
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #projects-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sublist {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+}
+
 #contact {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 4rem auto;
-  
 }
 
 #contact-container {
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 23%;
-  height: 10rem;
+  height: 12rem;
   border: 0.2rem solid #523F38 ;
   border-radius: 1.2rem;
 }
 
-#contact h2 {
+#contact-container h2 {
   text-align: center;
   padding: 1rem 0.5rem;
   background-color: #523F38;
@@ -297,19 +411,34 @@ nav ul li a {
   border-radius: 1rem; 
 }
 
-#contact ul {
-  list-style-type: none;
+#contact-container ul {
+  list-style-type:disc;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
   width: 90%;
   padding: 1rem 2rem;
+  line-height: 1.5rem;
 }
 
-#contact li a {
+#contact-container li a {
   color: #1EA896;
   text-decoration: none;   
+}
+
+#contact-container li a:hover {
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #contact {
+    margin: 0rem auto 2rem auto;
+  }
+
+  #contact-container {
+    width: 50%;
+  }
 }
 
 footer {
@@ -323,3 +452,4 @@ footer {
   width: 100%;
   font-size: 1.5rem;
 }
+
