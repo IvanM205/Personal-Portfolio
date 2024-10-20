@@ -29,3 +29,4 @@ for (const child of skillsContent.children) {
 }
 
 skillsContent.addEventListener('click', handleEvent);
+skillsContent.addEventListener('touchstart', handleEvent);
