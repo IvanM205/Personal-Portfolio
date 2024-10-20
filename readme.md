@@ -6,6 +6,8 @@ Practicing the basics of HTML, CSS and JavaScript in a creative way.
 Websites introduces me as a person as well as a software developer.
 Valuable skills, experience and knowledge are all presented on a website.
 
+Link: https://ivanm205.github.io/Personal-Portfolio/
+
 ## Structure of the website
 - Introduction
 - Education
